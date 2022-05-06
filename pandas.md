@@ -1,4 +1,5 @@
 # pandas 操作Excel
+----------
 ## 1、pandas读取任意位置数据
 ```python
 books = pd.read_excel('c:/Temp/Books.xlsx',skiprows=3,usecols="C:F")
@@ -13,11 +14,11 @@ print(books)
 ```
 特别注意：Nan默认为float浮点数，需要将其转换为str字符串类型，不然ID不能取整。
 ## 3、日期累加计算
-### 年
++ 年
 ```python
  books['Date'].at[i] = date(start.year + i,start.month,start.day)
 ```
-### 月
++ 月
 ```python
  def add_month(d,md):
   yd = md // 12
@@ -29,7 +30,16 @@ print(books)
 # 计算月份算法
  books['Date'].at[i] = add_month(start,i)
 ```
-### 日
++ 日
 ```python
 books['Date'].at[i] = start + timedelta(days = i)
+```
+## 4、Excel技巧
++ 设置INDEX列
+```python
+books.set_index('ID',inplace=True)
+```
++ 列和列之间的运算
+```python
+books['Price'] = books['ListPrice'] * books
 ```

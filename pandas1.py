@@ -17,5 +17,7 @@ for i in books.index:
     books['ID'].at[i] = i+1
     books['InStore'].at[i] = 'Yes' if i % 2 == 0 else 'No'
     books['Date'].at[i] = add_month(start,i)
+books.set_index('ID',inplace=True)
 print(books)
+books.to_excel('c:/Temp/OutPut3.xlsx')
 
