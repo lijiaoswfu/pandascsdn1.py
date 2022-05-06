@@ -41,5 +41,5 @@ books.set_index('ID',inplace=True)
 ```
 + 列和列之间的运算
 ```python
-books['Price'] = books['ListPrice'] * books
+books['Price'] = books['ListPrice'] * books['Discount']
 ```
