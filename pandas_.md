@@ -1,11 +1,14 @@
-# pandas 操作Excel(笔记)
+#  pandas 操作Excel(笔记)
+  
 ----------
-## 1、pandas读取任意位置数据
+##  1、pandas读取任意位置数据
+  
 ```python
 books = pd.read_excel('c:/Temp/Books.xlsx',skiprows=3,usecols="C:F")
 print(books)
 ```
-## 2、pandas自定义填充序列号
+##  2、pandas自定义填充序列号
+  
 ```python
 books = pd.read_excel('c:/Temp/Books.xlsx',skiprows=3,usecols="C:F",index_col=None,dtype={'ID':str})
 for i in books.index:
@@ -13,7 +16,8 @@ for i in books.index:
 print(books)
 ```
 特别注意：Nan默认为float浮点数，需要将其转换为str字符串类型，不然ID不能取整。
-## 3、日期累加计算
+##  3、日期累加计算
+  
 + 年
 ```python
  books['Date'].at[i] = date(start.year + i,start.month,start.day)
@@ -34,7 +38,8 @@ print(books)
 ```python
 books['Date'].at[i] = start + timedelta(days = i)
 ```
-## 4、Excel技巧
+##  4、Excel技巧
+  
 + 设置INDEX列
 ```python
 books.set_index('ID',inplace=True)
@@ -55,11 +60,11 @@ products.sort_values(by =['Worthy','Price'],inplace = True,ascending = [True,Fal
 ```python
 def age_18_to_30(a):
     return 18<=a<30
-
+  
 def level_a(s):
     return 85<=s<=100
 # 定义不同的函数设定筛选条件
-
+  
 Students = Students.loc[Students['Age'].apply(age_18_to_30)].loc[Students['Score'].apply(level_a)]  #loc多重过滤
 Students = Students.loc[Students.Age.apply(age_18_to_30)].loc[Students.Score.apply(level_a)]  #loc多重过滤另外一种写法
 Students = Students.loc[Students.Age.apply(lambda a:18<=a<30)].loc[Students.Score.apply(lambda s:85<=s<=100)]  #loc多重过滤LAMBDA表达式写法（不调用函数）
@@ -97,12 +102,4 @@ f.subplots_adjust(left=0.2,bottom=0.42) #左边留出20%，下面留出42%
 # plt.tight_layout()
 plt.show()
 ```
-+ 分组柱状图内嵌并排序
-```python
-users['Total'] = users['Oct']+users['Nov']+users['Dec']
-users.sort_values(by='Total',inplace=True,ascending=True)
-users.plot.barh(x='Name',y=['Oct','Nov','Dec'],stacked = True)  # stacked = True条状图，users.plot.barh横状图
-plt.title('HandSome Lijiao',fontsize =18,fontweight ='bold')
-plt.tight_layout()
-plt.show()
-```
+  
