@@ -41,5 +41,13 @@ books.set_index('ID',inplace=True)
 ```
 + 列和列之间的运算
 ```python
-books['Price'] = books['ListPrice'] * books['Discount']
+books['Price'] = books['ListPrice'] * books['Discount'] #乘法
+books['Price'] = books['ListPrice'] + 2  #加法
+```
++ 单列排序和多列排序
+```python
+products.sort_values(by ='Worthy',inplace = True,ascending = False)  # 单列排序
+```
+```python
+products.sort_values(by =['Worthy','Price'],inplace = True,ascending = [True,False])  # 多列排序，并按照不同的升降序排列
 ```
