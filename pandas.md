@@ -118,5 +118,5 @@ plt.title('Source of InterNationl Students',fontsize=18,fontweight='bold')
 plt.ylabel('2017year',fontsize = 12,fontweight= 'bold')  # Ylabel重写格式
 plt.show()
 ```
-最后运行图示：
+最后运行图示：  
 ![avatar](/pic/12.png)
