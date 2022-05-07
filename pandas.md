@@ -106,7 +106,7 @@ plt.title('HandSome Lijiao',fontsize =18,fontweight ='bold')
 plt.tight_layout()
 plt.show()
 ```
-最后运行图示：
+最后运行图示：  
 ![avatar](/pic/11.png)
 + 饼图绘制
 ```python
