@@ -271,6 +271,7 @@ df_inner.iloc[[0,2,5],[4,5]] #提取第0、2、5行，4、5列
 df_inner.ix[:'2013-01-03',:4] #2013-01-03号之前，前四列数据
 # 使用ix按索引标签和位置混合提取数据
 
+df_inner['city'].map(str.strip)
 df_inner['city'].astype('str')
 df_inner['city'].isin(['guangzhou'])
 # 判断city列的值是否为北京(有问题)
@@ -281,6 +282,65 @@ df_inner.loc[df_inner['city'].isin(['beijing','shanghai','shenzhen'])]
 categ1 = pd.DataFrame(df_inner['category'].str[:3])
 print(categ1)
 # 提取前三个字符，并生成数据表
+
+df_inner.loc[(df_inner['age'] > 25) & (df_inner['city'] == 'sh'), ['id','city','age','category','gender']]
+# 使用“与”进行筛选
+
+df_inner.loc[(df_inner['age'] > 25) | (df_inner['city'] == 'sh'), ['id','city','age','category','gender']].sort_values(['age']) 
+# 使用“或”进行筛选
+
+df_inner.loc[(df_inner['city'] != 'sh'), ['id','city','age','category','gender']].sort_values(['id']) 
+# 使用“非”条件进行筛选
+
+df_inner.loc[(df_inner['city'] != 'sh'), ['id','city','age','category','gender']].sort_values(['id']).city.count()
+# 对筛选后的数据按city列进行计数
+
+df_inner.query('city == ["shenzhen", "shanghai"]')
+# 使用query函数进行筛选
+
+df_inner.query('city == ["shenzhen", "shanghai"]').price.sum()
+# 对筛选后的结果按prince进行求和
+
+df_inner.groupby('city').count()
+# 对所有的列进行计数汇总
+
+df_inner.groupby('city')['id'].count()
+# 按城市对id字段进行计数
+
+df_inner.groupby(['city','size_x'])['id'].count()
+# 对两个字段进行汇总计数
+
+df_inner.groupby('city')['price'].agg([len,np.sum, np.mean]) 
+# 对city字段进行汇总，并分别计算prince的合计和均值
+
+df_inner.sample(n=3) 
+# 简单的数据采样(随机)
+
+weights = [0, 0, 0, 0, 0.5, 0.5]
+df_inner.sample(n=2, weights=weights) 
+# 手动设置采样权重(指定权重采样)
+
+df_inner.sample(n=6, replace=False) 
+# 采样后不放回（replace=False），True放回
+
+df_inner.describe().round(2).T #round函数设置显示小数位，T表示转置
+# 数据表描述性统计
+
+df_inner['price'].std()
+# 计算列的标准差
+
+df_inner['price'].cov(df_inner['m-point']) 
+# 计算两个字段间的协方差
+
+df_inner.cov()
+# 数据表中所有字段间的协方差
+
+df_inner['price'].corr(df_inner['m-point']) #相关系数在-1到1之间，接近1为正相关，接近-1为负相关，0为不相关
+# 两个字段的相关性分析
+
+df_inner.corr()
+# 数据表的相关性分析
+
 
 
 
