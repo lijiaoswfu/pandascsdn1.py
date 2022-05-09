@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-from sqlalchemy import true
 # 添加引用
 
 df = pd.DataFrame({"id":[1001,1002,1003,1004,1005,1006], 
