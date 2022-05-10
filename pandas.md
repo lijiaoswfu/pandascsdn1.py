@@ -107,7 +107,8 @@ plt.tight_layout()
 plt.show()
 ```
 最后运行图示：  
-![avatar](/pic/11.png)
+![11.png](./pic/11.png)
+
 + 饼图绘制
 ```python
 # students.sort_values(by='2017',inplace=True,ascending = True) # 排序从小到大
@@ -119,4 +120,4 @@ plt.ylabel('2017year',fontsize = 12,fontweight= 'bold')  # Ylabel重写格式
 plt.show()
 ```
 最后运行图示：  
-![avatar](/pic/12.png)
+![12.png](./pic/12.png)
