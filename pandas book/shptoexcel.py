@@ -26,6 +26,7 @@ for coluName in shpMergeunique:
 
 
 
+
 shpMerge.plot.barh(x='项目名称',y='面积',stacked = True)
 
 plt.ylabel('项目名称')
