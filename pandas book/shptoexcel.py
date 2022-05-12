@@ -1,7 +1,8 @@
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-import docx as dc
+import os
+
 
 plt.switch_backend('Tkagg')
 pd.set_option('display.max_columns', None)
@@ -18,6 +19,11 @@ mega = basicData[['序号','镇镇（街道','村（居委）','社（林班）'
 shpMerge = pd.merge(shp,mega,how='left',on=['序号'])
 # print(shpMerge.head())
 shpMerge.to_excel('test.xlsx',encoding='utf-8-sig')
+shpMergeunique = shpMerge['项目名称'].unique() # 获取项目不重复值
+for coluName in shpMergeunique:
+    os.makedirs('./'+coluName, exist_ok=True)  # 建立对应的项目文件
+
+
 
 
 shpMerge.plot.barh(x='项目名称',y='面积',stacked = True)

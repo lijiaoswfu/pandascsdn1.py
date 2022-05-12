@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5020a862-0ce6-451c-9384-7b6d9143e686" name="Default Changelist" comment="docx">
-      <change afterPath="$PROJECT_DIR$/pandas book/docxcook/11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pandas book/docxcook/docxc1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pandas book/docxcook/docxc2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pandas book/docxpython.py" beforeDir="false" afterPath="$PROJECT_DIR$/pandas book/docxpython.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandas book/shptoexcel.py" beforeDir="false" afterPath="$PROJECT_DIR$/pandas book/shptoexcel.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +69,7 @@
       <recent name="E:\Gis\python\vscode\pandas book" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.docxpython (1)">
+  <component name="RunManager" selected="Python.shptoexcel">
     <configuration name="docxc1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonExcel" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -164,9 +162,6 @@
       <module name="PythonExcel" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pandas book" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -184,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.shptoexcel" />
         <item itemvalue="Python.docxpython (1)" />
         <item itemvalue="Python.docxc2" />
         <item itemvalue="Python.docxc1" />
         <item itemvalue="Python.docxpython" />
-        <item itemvalue="Python.shptoexcel" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +201,8 @@
       <workItem from="1652087352819" duration="362000" />
       <workItem from="1652145657755" duration="556000" />
       <workItem from="1652146229397" duration="14737000" />
-      <workItem from="1652249307122" duration="6279000" />
+      <workItem from="1652249307122" duration="6326000" />
+      <workItem from="1652318366812" duration="5276000" />
     </task>
     <task id="LOCAL-00001" summary="unitpycharm">
       <created>1652062593085</created>
@@ -236,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652176764715</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="docx">
+      <created>1652260881169</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652260881169</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,22 +294,22 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1156" y="621" key="Github.ShareDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1652063208361" />
-    <state width="2516" height="249" key="GridCell.Tab.0.bottom" timestamp="1652256502963">
+    <state width="2516" height="249" key="GridCell.Tab.0.bottom" timestamp="1652319373781">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2516" height="249" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1652256502963" />
-    <state width="2516" height="249" key="GridCell.Tab.0.center" timestamp="1652256502963">
+    <state width="2516" height="249" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1652319373781" />
+    <state width="2516" height="249" key="GridCell.Tab.0.center" timestamp="1652319373781">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2516" height="249" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1652256502963" />
-    <state width="2516" height="249" key="GridCell.Tab.0.left" timestamp="1652256502963">
+    <state width="2516" height="249" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1652319373781" />
+    <state width="2516" height="249" key="GridCell.Tab.0.left" timestamp="1652319373781">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2516" height="249" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1652256502963" />
-    <state width="2516" height="249" key="GridCell.Tab.0.right" timestamp="1652256502963">
+    <state width="2516" height="249" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1652319373781" />
+    <state width="2516" height="249" key="GridCell.Tab.0.right" timestamp="1652319373781">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2516" height="249" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1652256502963" />
+    <state width="2516" height="249" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1652319373781" />
     <state width="2516" height="499" key="GridCell.Tab.1.bottom" timestamp="1652087111878">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -327,10 +330,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="781" y="364" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1652165364258" />
-    <state x="911" y="447" key="Vcs.Push.Dialog.v2" timestamp="1652176771484">
+    <state x="911" y="447" key="Vcs.Push.Dialog.v2" timestamp="1652260888944">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="911" y="447" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1652176771484" />
+    <state x="911" y="447" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1652260888944" />
     <state x="1097" y="629" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1652145919777">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -340,7 +343,7 @@
     <SUITE FILE_PATH="coverage/vscode$docxc2.coverage" NAME="docxc2 Coverage Results" MODIFIED="1652252326304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas book/docxcook" />
     <SUITE FILE_PATH="coverage/vscode$docx.coverage" NAME="docx Coverage Results" MODIFIED="1652175056582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas book" />
     <SUITE FILE_PATH="coverage/vscode$shptoexcel.coverage" NAME="shptoexcel Coverage Results" MODIFIED="1652086853401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas book" />
-    <SUITE FILE_PATH="coverage/vscode$docxpython__1_.coverage" NAME="docxpython (1) Coverage Results" MODIFIED="1652256502958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas book" />
+    <SUITE FILE_PATH="coverage/vscode$docxpython__1_.coverage" NAME="docxpython (1) Coverage Results" MODIFIED="1652319047598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas book" />
     <SUITE FILE_PATH="coverage/vscode$docxc1.coverage" NAME="docxc1 Coverage Results" MODIFIED="1652249547952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas book/docxcook" />
   </component>
 </project>
