@@ -20,9 +20,17 @@ shpMerge = pd.merge(shp,mega,how='left',on=['序号'])
 # print(shpMerge.head())
 shpMerge.to_excel('test.xlsx',encoding='utf-8-sig')
 shpMergeunique = shpMerge['项目名称'].unique() # 获取项目不重复值
+'''
 for coluName in shpMergeunique:
     os.makedirs('./'+coluName, exist_ok=True)  # 建立对应的项目文件
+'''
+shpMergegroupby = shpMerge.groupby('占地属性',as_index=False)['面积'].sum()  # 根据地类统计面积,同时取消按条件索引
+shpMergegroupby = shpMergegroupby.rename(columns={'占地属性':'镇镇（街道'}) # 修改列名，以便让两个表列名贴合
 
+# sMgsum = shpMergegroupby.to_frame()
+# sMgsum['index']= range(1,len(sMgsum)+1)
+# sMgsum.set_index('index',inplace = True)
+DF = pd.concat([shpMerge,shpMergegroupby])
 
 
 
