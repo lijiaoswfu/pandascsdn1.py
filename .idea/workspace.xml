@@ -20,9 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5020a862-0ce6-451c-9384-7b6d9143e686" name="Default Changelist" comment="docx">
+      <change afterPath="$PROJECT_DIR$/pandas book/docxcook/jcz.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pandas book/jcz.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/PythonExcel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonExcel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandas book/shptoexcel.py" beforeDir="false" afterPath="$PROJECT_DIR$/pandas book/shptoexcel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandas book/Data/2019.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pandas book/Data/2019.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +51,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JupyterTrust" id="221bd12e-89a3-4baf-8d52-d3fa8bb0c2d1" />
@@ -63,22 +72,23 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pandas book/docxcook" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pandas book" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Gis\python\vscode\pandas book\docxcook" />
+      <recent name="C:\carl\PythonExcel\pandas book" />
       <recent name="E:\Gis\python\vscode\pandas book" />
+      <recent name="E:\Gis\python\vscode\pandas book\docxcook" />
       <recent name="E:\Gis\python\vscode\Data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Gis\python\vscode\pandas book" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.shptoexcel">
-    <configuration name="docxc1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.jcz (1)">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="PythonExcel" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -86,14 +96,14 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pandas book/docxcook" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pandas book/docxcook/docxc1.py" />
+      <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -144,7 +154,26 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="docxpython" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="jcz (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonExcel" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pandas book" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pandas book/jcz.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="jcz" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonExcel" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -152,14 +181,14 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pandas book" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pandas book/docxcook" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:\Gis\python\vscode\pandas book\docxpython.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pandas book/docxcook/jcz.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -190,11 +219,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.jcz (1)" />
+        <item itemvalue="Python.jcz" />
         <item itemvalue="Python.shptoexcel" />
         <item itemvalue="Python.docxpython (1)" />
         <item itemvalue="Python.docxc2" />
-        <item itemvalue="Python.docxc1" />
-        <item itemvalue="Python.docxpython" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +245,18 @@
       <workItem from="1652318366812" duration="5276000" />
       <workItem from="1652343778692" duration="1977000" />
       <workItem from="1652489997241" duration="4785000" />
-      <workItem from="1652498963798" duration="478000" />
+      <workItem from="1652498963798" duration="989000" />
+      <workItem from="1652500023968" duration="712000" />
+      <workItem from="1652769806217" duration="107000" />
+      <workItem from="1664796376994" duration="17000" />
+      <workItem from="1670724658771" duration="184000" />
+      <workItem from="1671502203485" duration="725000" />
+      <workItem from="1671527640972" duration="611000" />
+      <workItem from="1671580664250" duration="19000" />
+      <workItem from="1671580765799" duration="2156000" />
+      <workItem from="1671586054795" duration="10280000" />
+      <workItem from="1671604580919" duration="12196000" />
+      <workItem from="1671673413062" duration="8095000" />
     </task>
     <task id="LOCAL-00001" summary="unitpycharm">
       <created>1652062593085</created>
@@ -253,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652260881169</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="docx">
+      <created>1652499476582</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1652499476582</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
