@@ -34,6 +34,16 @@ shpMergeunique = shpMerge['项目名称'].unique() # 获取项目不重复值
 shpMergeuniquetime = shpMerge['现勘时间'].unique() # 获取时间不重复值
 shpMergeuniquepepo = shpMerge['勘测人员'].unique() # 获取人员不重复值
 
+ldwyzshp = shpMerge.query("是否林地 == '林地'")
+ldwyzshpysp = ldwyzshp.query("占地属性 != '已审批'" )  # 条件筛选，林地并非已审批
+ldwyzshpysp['WZ']= ldwyzshpysp['镇镇（街道']+ldwyzshpysp['村（居委）']+ldwyzshpysp['社（林班）'].map(str)
+lzarry = ldwyzshpysp['林种'].unique() # 获取林种不重复值
+dileiarry = ldwyzshpysp['地类'].unique() # 获取地类不重复值
+ysszarry = ldwyzshpysp['优势树种'].unique() # 获取优势树种不重复值
+sllbarry = ldwyzshpysp['森林类别'].unique() # 获取森林类别不重复值
+wzarry = ldwyzshpysp['WZ'].unique() # 获取位置不重复值
+bzarry = ldwyzshpysp['备注'].unique() # 获取位置不重复值
+
 '''
 for coluName in shpMergeunique:
     os.makedirs('./'+coluName, exist_ok=True)  # 建立对应的项目文件
@@ -52,9 +62,12 @@ for coluName in shpMergeunique:
 
 sfld = shpfinall.groupby(['是否林地'],as_index=False)['面积'].sum()  # 根据是否林地统计面积,同时取消按条件索引
 lmds = ''
+j = 0
 for i in range(len(sfld)):
-   lmds = lmds + sfld.iloc[i,0] + sfld.iloc[i,1].astype(str) + '公顷;' # 循环读取林地和非林地分类面积
-
+   lmds = lmds + sfld.iloc[i,0] + sfld.iloc[i,1].astype(str) + '公顷' # 循环读取林地和非林地分类面积
+   if j < len(sfld) -1:
+      j=j+1
+      lmds = lmds +"、"
 hejisum = str(round(sfld.iloc[:,1].sum(),4))
 sfld.loc["合计"] = sfld.iloc[:,1].sum(axis=0)
 sfld.loc['合计','是否林地'] = '合计'
@@ -63,8 +76,69 @@ sfld.loc['合计','是否林地'] = '合计'
 
 
 
-shpMergegroupby = shpfinall.groupby(['是否林地','占地属性'],as_index=False)['面积'].sum()  # 根据地类统计面积,同时取消按条件索引
+shpMergegroupby = shpfinall.groupby(['是否林地','占地属性','备注'],as_index=False)['面积'].sum()  # 根据是否林地统计面积
 
+shequer = shpMergegroupby.query("是否林地 == '林地'")  # 条件索引为林地
+shequysp = shequer.query("占地属性 != '已审批'" )  # 条件筛选，林地并非已审批
+
+
+
+# 林分因子字段读取
+beizhu = ''
+j=0
+for i in bzarry:
+   beizhu = beizhu +str(i) # 循环读取备注属性
+   if j < bzarry.size -1:
+      j=j+1
+      beizhu = beizhu +"、"
+
+wztext = ''
+j = 0
+for i in wzarry:
+   wztext = wztext +str(i)+"社" # 循环读取位置属性
+   if j < wzarry.size -1:
+      j=j+1
+      wztext = wztext +"、"
+
+sllbtext = ''
+j = 0
+for i in sllbarry:
+   sllbtext = sllbtext +str(i) # 循环读取森林类别属性
+   if j < sllbarry.size -1:
+      j=j+1
+      sllbtext = sllbtext +"、"
+
+yssztext = ''
+j = 0
+for i in ysszarry:
+   yssztext = yssztext +str(i) # 循环读取优势树种属性
+   if j < ysszarry.size -1:
+      j=j+1
+      yssztext = yssztext +"、"
+
+lztext = ''
+j= 0
+for i in lzarry:
+   lztext = lztext +str(i) # 循环读取林种属性
+   if j < lzarry.size -1:
+      j=j+1
+      lztext = lztext +"、"
+
+dileitxt = ''
+j = 0
+for i in dileiarry:
+   dileitxt = dileitxt +str(i) # 循环读取地类属性
+   if j < dileiarry.size -1:
+      j=j+1
+      dileitxt = dileitxt +"、"
+
+ldsx = ''
+j = 0
+for i in range(len(shequer)):
+   ldsx = ldsx +shequer.iloc[i,1] +shequer.iloc[i,3].astype(str) + '公顷' # 循环读取林地占地属性分类面积
+   if j < len(shequer) -1:
+      j=j+1
+      ldsx = ldsx +"、"
 
 # shppovit = pd.pivot_table(shpfinall,index=['地类','占地属性'],values=['面积'],aggfunc=[np.sum],fill_value=0,margins=True) 数据透视表获取值
 DF = pd.concat([shpfinall,sfld])
@@ -142,6 +216,16 @@ def docxzw(pzw,szw):
    paragraph_formatFirst = pzw.paragraph_format
    paragraph_formatFirst.line_spacing = Pt(28)  # 固定值，30磅
    pzw.paragraph_format.first_line_indent = Cm(1.1)
+
+def docxdw(pdw,sdw):
+   runFirst = pdw.add_run(sdw)
+   runFirst.font.name = '方正仿宋_GBK'
+   runFirst.font.element.rPr.rFonts.set(qn('w:eastAsia'), '方正仿宋_GBK')
+   runFirst.font.size = Pt(16)
+   paragraph_formatFirst = pdw.paragraph_format
+   paragraph_formatFirst.line_spacing = Pt(28)  # 固定值，30磅
+   pdw.paragraph_format.alignment = WD_PARAGRAPH_ALIGNMENT.RIGHT  # 段落右对齐
+
 doc = Document()
 # print(doc.add_heading("一级标题", level=1))   添加一级标题的时候出错，还没有解决！
 strHead = '重庆市涪陵区林业规划和资源监测中心关于'+ shpMergeunique +'占地的现场勘验报告'
@@ -158,7 +242,7 @@ s2 ="一、勘验时间："+shpMergeuniquetime+"。"
 docxzw(p2,s2)
 
 p3 =doc.add_paragraph()
-s3 = "二、勘验地点：大木乡武陵村1社。"
+s3 = "二、勘验地点："+wztext+"。"
 docxzw(p3,s3)
 
 p4 =doc.add_paragraph()
@@ -174,7 +258,7 @@ s6 = "五、勘验方法：通过现场观察及了解访问，查阅比对卫�
 docxzw(p6,s6)
 
 p7 = doc.add_paragraph()
-s7 = "六、勘验结果："+shpMergeunique+"涉及面积"+hejisum+"公顷,其中"+str(lmds)+"。所占林地地类为国家特别规定灌木林地；林种为自然保护区林，总占林地的权属为集体；优势树种为其他灌木，起源为天然；按森林类别分为国家公益林；林地保护等级为Ⅱ。所占林地主要用途为建房。具体详见附表。"
+s7 = "六、勘验结果："+shpMergeunique+"涉及面积"+hejisum+"公顷,其中"+str(lmds)+"。所涉及林地中"+ldsx+"。所占林地地类为"+dileitxt+"，林种为"+lztext+"，优势树种为"+yssztext+"，按森林类别分为"+sllbtext+"。所涉及林地现状为"+beizhu+"等。具体详见附表。"
 docxzw(p7,s7)
 
 p8 = doc.add_paragraph()
@@ -182,10 +266,18 @@ s8 = "附件：1."+shpMergeunique+"占用林地勘验图\n2. "+shpMergeunique+"�
 docxzw(p8,s8)
 
 p9 = doc.add_paragraph()
-s9 = "勘验人（签字）：\n重庆市涪陵区林业规划和资源监测中心\n"+shpMergeuniquetime+""
-docxzw(p9,s9)
+s9 = "\n\n勘验人（签字）：\t\t\t\t"
+docxdw(p9,s9)
 
-doc.save('new1.docx')
+p10 =doc.add_paragraph()
+s10 = "重庆市涪陵区林业规划和资源监测中心"
+docxdw(p10,s10)
+
+p11 = doc.add_paragraph()
+s11 = shpMergeuniquetime
+docxdw(p11,s11)
+
+doc.save("new1.docx")
 
 
 

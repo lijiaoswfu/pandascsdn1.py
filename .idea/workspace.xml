@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5020a862-0ce6-451c-9384-7b6d9143e686" name="Default Changelist" comment="docx" />
+    <list default="true" id="5020a862-0ce6-451c-9384-7b6d9143e686" name="Default Changelist" comment="docx">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pandas book/jcz.py" beforeDir="false" afterPath="$PROJECT_DIR$/pandas book/jcz.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -249,7 +252,8 @@
       <workItem from="1671580765799" duration="2156000" />
       <workItem from="1671586054795" duration="10280000" />
       <workItem from="1671604580919" duration="12196000" />
-      <workItem from="1671673413062" duration="8540000" />
+      <workItem from="1671673413062" duration="17191000" />
+      <workItem from="1671697194635" duration="3828000" />
     </task>
     <task id="LOCAL-00001" summary="unitpycharm">
       <created>1652062593085</created>
@@ -307,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671682597701</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="docx">
+      <created>1671683030020</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1671683030020</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
