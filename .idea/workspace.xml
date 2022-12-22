@@ -19,14 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5020a862-0ce6-451c-9384-7b6d9143e686" name="Default Changelist" comment="docx">
-      <change afterPath="$PROJECT_DIR$/pandas book/docxcook/jcz.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pandas book/jcz.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PythonExcel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonExcel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandas book/Data/2019.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pandas book/Data/2019.csv" afterDir="false" />
-    </list>
+    <list default="true" id="5020a862-0ce6-451c-9384-7b6d9143e686" name="Default Changelist" comment="docx" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -256,7 +249,7 @@
       <workItem from="1671580765799" duration="2156000" />
       <workItem from="1671586054795" duration="10280000" />
       <workItem from="1671604580919" duration="12196000" />
-      <workItem from="1671673413062" duration="8124000" />
+      <workItem from="1671673413062" duration="8540000" />
     </task>
     <task id="LOCAL-00001" summary="unitpycharm">
       <created>1652062593085</created>
@@ -300,7 +293,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652499476582</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="docx">
+      <created>1671682585275</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671682585275</updated>
+    </task>
+    <task id="LOCAL-00008" summary="docx">
+      <created>1671682597701</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1671682597701</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
