@@ -20,6 +20,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5020a862-0ce6-451c-9384-7b6d9143e686" name="Default Changelist" comment="docx">
+      <change afterPath="$PROJECT_DIR$/Android/QTA1/untitled/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/QTA1/untitled/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/QTA1/untitled/mainwindow.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/QTA1/untitled/mainwindow.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/QTA1/untitled/mainwindow.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/QTA1/untitled/untitled.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/QTA2/QT/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/QTA2/QT/QT.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/QTA2/QT/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/QTA2/QT/widget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/QTA2/QT/widget.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/QTA2/QT/widget.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/QTtest/untitled/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/QTtest/untitled/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/QTtest/untitled/mainwindow.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/QTtest/untitled/mainwindow.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/QTtest/untitled/mainwindow.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/QTtest/untitled/untitled.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android/QTtest/untitled/untitled_zh_CN.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QT/QT5/ch1/Dialog/Dialog.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QT/QT5/ch1/Dialog/dialog.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QT/QT5/ch1/Dialog/dialog.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QT/QT5/ch1/Dialog/dialog.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QT/QT5/ch1/Dialog/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QT/QT5/ch2/Dialog/Dialog.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QT/QT5/ch2/Dialog/dialog.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QT/QT5/ch2/Dialog/dialog.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QT/QT5/ch2/Dialog/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pandas book/jcz.py" beforeDir="false" afterPath="$PROJECT_DIR$/pandas book/jcz.py" afterDir="false" />
     </list>
@@ -69,7 +97,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pandas book" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -253,7 +281,12 @@
       <workItem from="1671586054795" duration="10280000" />
       <workItem from="1671604580919" duration="12196000" />
       <workItem from="1671673413062" duration="17191000" />
-      <workItem from="1671697194635" duration="3828000" />
+      <workItem from="1671697194635" duration="4611000" />
+      <workItem from="1671703686145" duration="222000" />
+      <workItem from="1671704022982" duration="145000" />
+      <workItem from="1671775937284" duration="66000" />
+      <workItem from="1672195185895" duration="656000" />
+      <workItem from="1672450834398" duration="19041000" />
     </task>
     <task id="LOCAL-00001" summary="unitpycharm">
       <created>1652062593085</created>
@@ -318,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671683030020</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="docx">
+      <created>1671701938027</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1671701938027</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

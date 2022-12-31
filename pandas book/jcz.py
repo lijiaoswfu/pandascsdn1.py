@@ -24,11 +24,107 @@ basicData = pd.read_csv('./Data/2023.csv',encoding='utf-8-sig')
 shp = pd.read_excel('./Data/ceshi.xlsx',encoding='utf-8-sig')
 shp.rename(columns = {"xinxuhao": "序号", "MIAN_JI":"面积"}, inplace=True)
 shp['现勘时间'].astype('str')
+xujistring = ""
+
+# 第一个判断函数
+def panduan(zdsx,szz,sgz,xjz,dwzs,dwmj):
+   if zdsx != "已审批":
+      if szz == '柏树':
+         A = 0.000057173591
+         B = 1.8813305
+         C = 0.99568815
+         D = 0.6487
+         x = round((A * (xjz ** B) * (sgz ** C) * dwzs) * dwmj, 4)
+         y = x * D
+         return x
+      else:
+         if szz == '松树':
+            A = 0.000060049144
+            B = 1.87197530
+            C = 0.97180232
+            D = 0.6487  # 没修改
+            x = round((A * (xjz ** B) * (sgz ** C) * dwzs) * dwmj, 4)
+            y = x * D
+            return x
+         else:
+            if szz == '杉树':
+               A = 0.000058777042
+               B = 1.96998310
+               C = 0.89646157
+               D = 0.6487  # 没修改
+               x = round((A * (xjz ** B) * (sgz ** C) * dwzs) * dwmj, 4)
+               y = x * D
+               return x
+            else:
+               if szz == '阔叶':
+                  A = 0.000052750716
+                  B = 1.94503240
+                  C = 0.93885330
+                  D = 0.6487  # 树种阔叶，没修改
+                  x = round((A * (xjz ** B) * (sgz ** C) * dwzs) * dwmj, 4)
+                  y = x * D
+                  return x
+
+
+#逼不得已，比较狗血的二次函数
+def panduan2(zdsx,szz,sgz,xjz,dwzs,dwmj):
+   if zdsx != "已审批":
+      if szz == '柏树':
+         A = 0.000057173591
+         B = 1.8813305
+         C = 0.99568815
+         D = 0.6487
+         x = round((A * (xjz ** B) * (sgz ** C) * dwzs) * dwmj, 4)
+         y = round(x * D, 4)
+         return y
+      else:
+         if szz == '松树':
+            A = 0.000060049144
+            B = 1.87197530
+            C = 0.97180232
+            D = 0.6487  # 没修改
+            x = round((A * (xjz ** B) * (sgz ** C) * dwzs) * dwmj, 4)
+            y = round(x * D, 4)
+            return y
+         else:
+            if szz == '杉树':
+               A = 0.000058777042
+               B = 1.96998310
+               C = 0.89646157
+               D = 0.6487  # 没修改
+               x = round((A * (xjz ** B) * (sgz ** C) * dwzs) * dwmj, 4)
+               y = round(x * D, 4)
+               return y
+            else:
+               if szz == '阔叶':
+                  A = 0.000052750716
+                  B = 1.94503240
+                  C = 0.93885330
+                  D = 0.6487  # 树种阔叶，没修改
+                  x = round((A * (xjz ** B) * (sgz ** C) * dwzs) * dwmj, 4)
+                  y = round(x * D, 4)
+                  return y
+
+
+shp['小班蓄积'] = ""
+shp['小班材积'] = ""
+if shp['树种'].isnull().all():
+   xujistring = ""
+else:
+   for i in range(len(shp['树种'].notnull())):
+      shp.iloc[i,12] = panduan(shp.iloc[i,1],shp.iloc[i,8],shp.iloc[i,9],shp.iloc[i,10],shp.iloc[i,11],shp.iloc[i,0])
+      shp.iloc[i,13] = panduan2(shp.iloc[i,1],shp.iloc[i,8],shp.iloc[i,9],shp.iloc[i,10],shp.iloc[i,11],shp.iloc[i,0])
+
 mega = basicData[['序号','镇镇（街道','村（居委）','社（林班）','林地权属','地类','林种','起源','森林类别','公益林事权','国家公益林','优势树种','林地保护等','是否林地']]
 shpMerge = pd.merge(shp,mega,how='left',on=['序号'])
+
 # print(shpMerge.head())
 
-shpfinall = shpMerge[['镇镇（街道','村（居委）','社（林班）','是否林地','细斑号','占地属性','面积','林地权属','地类','林种','起源','森林类别','公益林事权','国家公益林','优势树种','林地保护等','备注']]
+shpfinall = shpMerge[['镇镇（街道','村（居委）','社（林班）','是否林地','细斑号','占地属性','面积','林地权属','地类','林种','起源','森林类别','公益林事权','国家公益林','优势树种','林地保护等','备注','小班蓄积','小班材积']]
+
+
+
+
 shpfinall.reset_index(drop=True,inplace=True)
 shpMergeunique = shpMerge['项目名称'].unique() # 获取项目不重复值
 shpMergeuniquetime = shpMerge['现勘时间'].unique() # 获取时间不重复值
@@ -43,6 +139,11 @@ ysszarry = ldwyzshpysp['优势树种'].unique() # 获取优势树种不重复值
 sllbarry = ldwyzshpysp['森林类别'].unique() # 获取森林类别不重复值
 wzarry = ldwyzshpysp['WZ'].unique() # 获取位置不重复值
 bzarry = ldwyzshpysp['备注'].unique() # 获取位置不重复值
+
+
+
+
+
 
 '''
 for coluName in shpMergeunique:
@@ -60,7 +161,7 @@ for coluName in shpMergeunique:
 # shpMergegroupby.loc['合计','占地属性'] = '合计'
 # shpMergegroupby.loc['合计','地类'] = ''
 
-sfld = shpfinall.groupby(['是否林地'],as_index=False)['面积'].sum()  # 根据是否林地统计面积,同时取消按条件索引
+sfld = shpfinall.groupby(['是否林地'],as_index=False).agg({'面积': 'sum', '小班蓄积': 'sum','小班材积': 'sum'})  # 根据是否林地统计面积,同时取消按条件索引
 lmds = ''
 j = 0
 for i in range(len(sfld)):
@@ -69,7 +170,14 @@ for i in range(len(sfld)):
       j=j+1
       lmds = lmds +"、"
 hejisum = str(round(sfld.iloc[:,1].sum(),4))
-sfld.loc["合计"] = sfld.iloc[:,1].sum(axis=0)
+xujisum = str(round(sfld.iloc[:,2].sum(),4))
+caijisum = str(round(sfld.iloc[:,3].sum(),4))
+if shpMerge['树种'].isnull().all():
+   xujistring = ""
+else:
+   xujistring = "涉及有林地总折合蓄积"+xujisum+"立方米，总折合材积"+caijisum+"立方米。"
+
+sfld.loc["合计"] = sfld.iloc[:,:].sum(axis=0)
 sfld.loc['合计','是否林地'] = '合计'
 
 
@@ -142,15 +250,15 @@ for i in range(len(shequer)):
 
 # shppovit = pd.pivot_table(shpfinall,index=['地类','占地属性'],values=['面积'],aggfunc=[np.sum],fill_value=0,margins=True) 数据透视表获取值
 DF = pd.concat([shpfinall,sfld])
-DF= DF[['镇镇（街道','村（居委）','社（林班）','是否林地','细斑号','占地属性','面积','林地权属','地类','林种','起源','森林类别','公益林事权','国家公益林','优势树种','林地保护等','备注']]
+DF= DF[['镇镇（街道','村（居委）','社（林班）','是否林地','细斑号','占地属性','面积','林地权属','地类','林种','起源','森林类别','公益林事权','国家公益林','优势树种','林地保护等','小班蓄积','小班材积','备注']]
 DF.reset_index(drop=True, inplace=True)
 bgexcel = DF.shape[0]+3 #获取最终写入的行数
 print(bgexcel)
 
 
 # 开始EXCEL格式设置
-worksheet.range('B1:R1').api.merge()
-worksheet.range('B2:R2').api.merge()
+worksheet.range('B1:T1').api.merge()
+worksheet.range('B2:T2').api.merge()
 worksheet.range('B1').value = shpMergeunique + '占地图班勘验一览表'
 worksheet.range('B2').value = '单位：公顷、厘米'
 worksheet.range('A3').value = DF
@@ -160,7 +268,7 @@ worksheet.range('A1').api.Font.Bold = True  #设置粗体
 worksheet.range('A1').api.HorizontalAlignment = -4108  # -4108 水平居中。 -4131 靠左，-4152 靠右。
 worksheet.range('A2').api.HorizontalAlignment = -4152  # -4108 水平居中。 -4131 靠左，-4152 靠右。
 worksheet.range('A1').api.VerticalAlignment = -4130      # -4108 垂直居中（默认）。 -4160 靠上，-4107 靠下， -4130 自动换行对齐。
-Ryou = 'Q'+str(bgexcel)
+Ryou = 'S'+str(bgexcel)
 print(Ryou)
 bgexcelfw = worksheet.range('A3',Ryou)
 bgexcelfw.api.HorizontalAlignment = -4108
@@ -197,6 +305,8 @@ bgexcelfw.api.Borders(12).Weight = 2
 workbook.save('test.xlsx')
 workbook.close()
 app.quit()
+app.kill()
+os.system("taskkill /f /im EXCEL.EXE")
 
 # 开始WORD报告编辑
 def docxhd(ph,st):
@@ -258,7 +368,7 @@ s6 = "五、勘验方法：通过现场观察及了解访问，查阅比对卫�
 docxzw(p6,s6)
 
 p7 = doc.add_paragraph()
-s7 = "六、勘验结果："+shpMergeunique+"涉及面积"+hejisum+"公顷,其中"+str(lmds)+"。所涉及林地中"+ldsx+"。所占林地地类为"+dileitxt+"，林种为"+lztext+"，优势树种为"+yssztext+"，按森林类别分为"+sllbtext+"。所涉及林地现状为"+beizhu+"等。具体详见附表。"
+s7 = "六、勘验结果："+shpMergeunique+"涉及面积"+hejisum+"公顷,其中"+str(lmds)+"。所涉及林地中"+ldsx+"。所占林地地类为"+dileitxt+"，林种为"+lztext+"，优势树种为"+yssztext+"，按森林类别分为"+sllbtext+"。所涉及林地现状为"+beizhu+"等。"+xujistring+"具体详见附表。"
 docxzw(p7,s7)
 
 p8 = doc.add_paragraph()
