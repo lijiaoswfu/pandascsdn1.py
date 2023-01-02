@@ -20,36 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5020a862-0ce6-451c-9384-7b6d9143e686" name="Default Changelist" comment="docx">
-      <change afterPath="$PROJECT_DIR$/Android/QTA1/untitled/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/QTA1/untitled/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/QTA1/untitled/mainwindow.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/QTA1/untitled/mainwindow.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/QTA1/untitled/mainwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/QTA1/untitled/untitled.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/QTA2/QT/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/QTA2/QT/QT.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/QTA2/QT/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/QTA2/QT/widget.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/QTA2/QT/widget.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/QTA2/QT/widget.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/QTtest/untitled/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/QTtest/untitled/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/QTtest/untitled/mainwindow.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/QTtest/untitled/mainwindow.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/QTtest/untitled/mainwindow.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/QTtest/untitled/untitled.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android/QTtest/untitled/untitled_zh_CN.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QT/QT5/ch1/Dialog/Dialog.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QT/QT5/ch1/Dialog/dialog.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QT/QT5/ch1/Dialog/dialog.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QT/QT5/ch1/Dialog/dialog.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QT/QT5/ch1/Dialog/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QT/QT5/ch2/Dialog/Dialog.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QT/QT5/ch2/Dialog/dialog.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QT/QT5/ch2/Dialog/dialog.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QT/QT5/ch2/Dialog/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pandas book/pyjb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PythonExcel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonExcel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pandas book/jcz.py" beforeDir="false" afterPath="$PROJECT_DIR$/pandas book/jcz.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +57,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JupyterTrust" id="221bd12e-89a3-4baf-8d52-d3fa8bb0c2d1" />
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="28mzOWaAaafbKo7gNC0As6Z6SCh" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -96,8 +72,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pandas book" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Qt/Qt5.14.2/5.14.2/msvc2017_64/bin/designer.exe" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -111,7 +87,7 @@
       <recent name="E:\Gis\python\vscode\pandas book" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.jcz (1)">
+  <component name="RunManager" selected="Python.pyjb">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="PythonExcel" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -134,54 +110,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="docxc2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PythonExcel" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pandas book/docxcook" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pandas book/docxcook/docxc2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="docxpython (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PythonExcel" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pandas book" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pandas book/docxpython.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="jcz (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonExcel" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pandas book" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -219,6 +154,47 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pyjb" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonExcel" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pandas book" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pandas book/pyjb.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="qgis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonExcel" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pandas book" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pandas book/qgis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="shptoexcel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonExcel" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -241,13 +217,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.jcz" />
+      <item itemvalue="Python.jcz (1)" />
+      <item itemvalue="Python.qgis" />
+      <item itemvalue="Python.shptoexcel" />
+      <item itemvalue="Python.pyjb" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pyjb" />
+        <item itemvalue="Python.qgis" />
         <item itemvalue="Python.jcz (1)" />
         <item itemvalue="Python.jcz" />
         <item itemvalue="Python.shptoexcel" />
-        <item itemvalue="Python.docxpython (1)" />
-        <item itemvalue="Python.docxc2" />
       </list>
     </recent_temporary>
   </component>
@@ -286,7 +269,19 @@
       <workItem from="1671704022982" duration="145000" />
       <workItem from="1671775937284" duration="66000" />
       <workItem from="1672195185895" duration="656000" />
-      <workItem from="1672450834398" duration="19041000" />
+      <workItem from="1672450834398" duration="20451000" />
+      <workItem from="1672541637960" duration="2551000" />
+      <workItem from="1672544838442" duration="490000" />
+      <workItem from="1672622648347" duration="1518000" />
+      <workItem from="1672624333382" duration="1999000" />
+      <workItem from="1672626504788" duration="154000" />
+      <workItem from="1672626694973" duration="876000" />
+      <workItem from="1672627688654" duration="737000" />
+      <workItem from="1672628634506" duration="170000" />
+      <workItem from="1672628927760" duration="391000" />
+      <workItem from="1672629645640" duration="139000" />
+      <workItem from="1672629862711" duration="2979000" />
+      <workItem from="1672644828829" duration="299000" />
     </task>
     <task id="LOCAL-00001" summary="unitpycharm">
       <created>1652062593085</created>
@@ -358,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671701938027</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="docx">
+      <created>1672475072545</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1672475072545</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,6 +395,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="docx" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pandascsdn1_py$qgis.coverage" NAME="qgis Coverage Results" MODIFIED="1672627434729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas book" />
     <SUITE FILE_PATH="coverage/vscode$docx.coverage" NAME="docx Coverage Results" MODIFIED="1652175056582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas book" />
     <SUITE FILE_PATH="coverage/vscode$docxc2.coverage" NAME="docxc2 Coverage Results" MODIFIED="1652252326304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas book/docxcook" />
     <SUITE FILE_PATH="coverage/pandascsdn1_py$docxpython__1_.coverage" NAME="docxpython (1) Coverage Results" MODIFIED="1652339340245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pandas book" />
