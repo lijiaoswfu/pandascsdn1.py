@@ -6,6 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/arcpy" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/pandas book" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.9 (PythonExcel)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
