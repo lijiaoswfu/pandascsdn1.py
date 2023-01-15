@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+	<class>ch1Class</class>
+	<widget class="QDialog" name="ch1Class">
+		<property name="geometry">
+			<rect>
+				<x>0</x>
+				<y>0</y>
+				<width>300</width>
+				<height>300</height>
+			</rect>
+		</property>
+		<property name="windowTitle">
+			<string>李薇安的小窝</string>
+		</property>
+		<property name="windowIcon">
+			<iconset resource="ch1.qrc">
+				<normaloff>:/ch1/icon.ico</normaloff>:/ch1/icon.ico
+			</iconset>
+		</property>
+	</widget>
+	<layoutdefault spacing="6" margin="11"/>
+	<resources>
+		<include location="ch1.qrc"/>
+	</resources>
+	<connections/>
+</ui>
