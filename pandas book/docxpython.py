@@ -23,6 +23,7 @@ runFirst = paragraphFirst.add_run(strFirst)
 runFirst.font.name='方正仿宋_GBK'
 runFirst.font.element.rPr.rFonts.set(qn('w:eastAsia'), '方正仿宋_GBK')
 runFirst.font.size = Pt(16)
+# 设置字体大小
 paragraph_formatFirst = paragraphFirst.paragraph_format
 paragraph_formatFirst.line_spacing = Pt(28)  # 固定值，30磅
 paragraphFirst.paragraph_format.first_line_indent = Cm(1.1)

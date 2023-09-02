@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">开始时间: 2023年8月25日 5:39:22</msg><msg code="-2147467259" type="100">执行失败。参数无效。</msg><msg code="979" type="100">ERROR 000979: 无法在不同工作空间之间进行复制。
+WARNING 000725: 输出数据: 数据集 C:\carl\PythonExcel\pro\Geopy\Geopy.gdb 已存在。</msg><msg code="-2147467259" type="100">执行(Copy)失败。</msg><msg code="0" type="3">运行 失败，结束时间： 2023年8月25日 5:39:22 (历时: 0.05 秒)</msg></messages>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">开始时间: 2023年8月27日 19:30:58</msg><msg code="539" type="100">ERROR 000539: Traceback (most recent call last):
+  File "&lt;expression&gt;", line 1, in &lt;module&gt;
+TypeError: must be real number, not str
+</msg><msg code="-2147467259" type="100">执行(CalculateField)失败。</msg><msg code="0" type="3">运行 失败，结束时间： 2023年8月27日 19:30:58 (历时: 0.04 秒)</msg></messages>

@@ -1,0 +1,4 @@
+ID: 1, Latitude: 35.099722, Longitude: -106.527550
+ID: 2, Latitude: 35.133015, Longitude: -106.583581
+ID: 3, Latitude: 35.137142, Longitude: -106.650632
+ID: 4, Latitude: 35.093650, Longitude: -106.573590

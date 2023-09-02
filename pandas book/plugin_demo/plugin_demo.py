@@ -263,8 +263,8 @@ class pluginDemo:
 
             # 获取tif文件的路径，例如：/home/project/data/srtm.tif
 
-            QgsProject.instance().removeMapLayer('gm_26cc56e8_97f4_41e3_b36b_c10672f48381')  # 移除已有的灌木图层
-            QgsProject.instance().removeMapLayer('qm_7af64c2c_96f8_4d3c_8199_914c11384907')  # 移除已有的乔木图层
+            # QgsProject.instance().removeMapLayer('gm_26cc56e8_97f4_41e3_b36b_c10672f48381')  # 移除已有的灌木图层
+            # QgsProject.instance().removeMapLayer('qm_7af64c2c_96f8_4d3c_8199_914c11384907')  # 移除已有的乔木图层
 
 
 

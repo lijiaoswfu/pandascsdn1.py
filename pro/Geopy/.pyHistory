@@ -1,0 +1,3 @@
+﻿fc = r"C:\carl\gdb\mw.shp"
+geoms = arcpy.CopyFeatures_management(fc, arcpy.Geometry())
+length = 0 for geom in geoms:     length += geom.length print(length)

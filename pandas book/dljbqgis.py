@@ -10,6 +10,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
+
 class MyWnd(QMainWindow, Ui_MainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
@@ -89,6 +90,7 @@ class MyWnd(QMainWindow, Ui_MainWindow):
         self.toolZoomOut = QgsMapToolZoom(self.canvas, True)  # true = out
         self.toolZoomOut.setAction(self.actionZoomOut)
         self.pan()
+
     def load_raster(self):
         # 加载栅格图层
         path_to_tif, ext = QFileDialog.getOpenFileName(self, '打开', '',
@@ -100,6 +102,7 @@ class MyWnd(QMainWindow, Ui_MainWindow):
         self.layers.append(rlayer)
         # self.canvas.setExtent(rlayer.extent())
         # self.canvas.setLayers(self.layers)
+
     def load_vector(self):
         # 加载矢量图层
         path_to_tif, ext = QFileDialog.getOpenFileName(self, '打开', '', '所有文件(*.shp)')
@@ -110,12 +113,17 @@ class MyWnd(QMainWindow, Ui_MainWindow):
         self.layers.append(layer)
         self.canvas.setExtent(layer.extent())
         self.canvas.setLayers(self.layers)
+
     def zoomIn(self):
         self.canvas.setMapTool(self.toolZoomIn)
+
     def zoomOut(self):
         self.canvas.setMapTool(self.toolZoomOut)
+
     def pan(self):
         self.canvas.setMapTool(self.toolPan)
+
+
 if __name__ == '__main__':
     qgs = QgsApplication([], True)
     qgs.setPrefixPath('C:/OSGeo4W/apps/qgis-ltr', True)
