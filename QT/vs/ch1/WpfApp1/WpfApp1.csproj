@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Image\bg.jpg" />
+		<None Remove="Image\bg.png" />
+		<None Remove="Image\m6.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Image\bg.jpg">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Image\bg.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Image\m6.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Esri.ArcGISRuntime.Toolkit" Version="100.15.0" />
+		<PackageReference Include="GMap.NET.WinPresentation" Version="2.1.7" />
+		<PackageReference Include="HandyControl" Version="3.4.0" />
+		<PackageReference Include="NPOI" Version="2.6.2" />
+		<PackageReference Include="OxyPlot.Wpf" Version="2.1.2" />
+		<PackageReference Include="System.Data.SQLite.Core" Version="1.0.118" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="GMap.NET.Core">
+	    <HintPath>..\..\..\..\..\..\Users\lijiao\.nuget\packages\gmap.net.core\2.1.7\lib\net6.0\GMap.NET.Core.dll</HintPath>
+	  </Reference>
+	  <Reference Include="GMap.NET.WindowsPresentation">
+	    <HintPath>..\..\..\..\..\..\Users\lijiao\.nuget\packages\gmap.net.winpresentation\2.1.7\lib\net6.0-windows7.0\GMap.NET.WindowsPresentation.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+</Project>
